@@ -12,7 +12,9 @@ Our problem statement holds significance due to its real-world applications, esp
 
 In our implementation, we've explored various super-resolution models such as SRCNN and EDSR. We've also built an ESRGAN from scratch in Python using Keras and TensorFlow, following the architecture outlined in the paper. This architecture initially downscales low-resolution images to capture information in dense vectors. During the upsampling phase, the model learns to represent this dense information in high resolution.
 
-To enhance the super-resolution model's accuracy, we've introduced an Attention mechanism within the residual. This attention mechanism comprises two sub-architectures: "Spatial" and "Channel." The Spatial unit identifies the significant locations of information in the image, while the Channel unit extracts meaningful content. After training the super-resolution model, we process all low-resolution images (64x64) through the trained model, upscaling them to 256x256. These enhanced images are then stored in a folder and used to train the YoloV5 model for the detection of small objects, specifically cars.
+To enhance the super-resolution model's accuracy, we've introduced an Attention mechanism within the residual. This attention mechanism comprises two sub-architectures: "Spatial" and "Channel." The Spatial unit identifies the significant locations of information in the image, while the Channel unit extracts meaningful content. After training the super-resolution model, we process all low-resolution images (64x64) through the trained model, upscaling them to 256x256. These enhanced images are then stored in a folder and used to train the YoloV5 model for the detection of small objects, specifically cars. The image displayed below shows the comparision of our model with SR-ResNet.
+
+![img1](https://github.com/ChandanaGiridhar/Drone_Small_Object_Detection/blob/main/1_model.png)
 
 ## Conclusion ##
 
@@ -26,6 +28,6 @@ Our assumptions are validated through the results presented above. Additionally,
 
 ## Related Links ##
 
-Complete Report - 
+Complete Report - [Click Here](https://github.com/ChandanaGiridhar/Drone_Small_Object_Detection/blob/main/SmallObjectDetectionForDrone_Report.pdf)
 
 Implementation - 
